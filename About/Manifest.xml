@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest>
+
+  <identifier>Rad Resist Armor Patch</identifier>
+  <version>1.0.0</version>
+  
+  <dependencies>
+	  <li>1127530465</li> <!-- Rimatomics -->
+  </dependencies>
+
+  <incompatibleWith></incompatibleWith>
+  <loadBefore></loadBefore>
+
+  <loadAfter>
+    <li>1127530465</li> <!-- Rimatomics -->
+  </loadAfter>
+
+  <suggests>
+    <li>1814988282</li> <!-- Vanilla Armour Expanded -->
+    <li>1814987817</li> <!-- Vanilla Apparel Expanded -->
+    <li>1695609511</li> <!-- Spartan Foundry -->
+  </suggests>
+
+  <showCrossPromotions>true</showCrossPromotions>
+  <manifestUri>https://raw.githubusercontent.com/Onigamii/ApexRimworldLegends-CE/master/About/Manifest.xml</manifestUri>
+  <downloadUri>https://github.com/Onigamii/ApexRimworldLegends-CE/releases/latest</downloadUri>
+
+</Manifest>
