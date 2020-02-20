@@ -93,14 +93,14 @@
         <li Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="SF_HazardOperationsArmorHelmet"]/equippedStatOffsets</xpath>
           <value>
-            <Radiation>-0.35</Radiation>
+            <Radiation>-0.45</Radiation>
           </value>
         </li>
 
         <li Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="SF_HazardOperationsArmor"]/equippedStatOffsets</xpath>
           <value>
-            <Radiation>-0.35</Radiation>
+            <Radiation>-0.45</Radiation>
           </value>
         </li>
 
