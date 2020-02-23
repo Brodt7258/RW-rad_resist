@@ -14,6 +14,13 @@
             <Radiation>-0.35</Radiation>
           </value>
         </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Apparel_ImprovGasMask"]/equippedStatOffsets</xpath>
+          <value>
+            <Radiation>-0.20</Radiation>
+          </value>
+        </li>
         
       </operations>
     </match>
