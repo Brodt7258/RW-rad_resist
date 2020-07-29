@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+			<li>Rimworld: Spartan Foundry</li>
+		</mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+			<operations>
+
+        <!-- Powered Assault Armor -->
+
+        <li Class="PatchOperationSequence">
+          <success>Always</success>
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="SF_PoweredAssaultArmorHelmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
+              <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="SF_PoweredAssaultArmorHelmet"]/equippedStatOffsets</xpath>
+              <value>
+                <ToxicSensitivity>-0.50</ToxicSensitivity>
+              </value>
+            </li>
+          </operations>
+	      </li>
+
+        <li Class="PatchOperationSequence">
+          <success>Always</success>
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="SF_PoweredAssaultArmor"]/equippedStatOffsets/ToxicSensitivity</xpath>
+              <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="SF_PoweredAssaultArmor"]/equippedStatOffsets</xpath>
+              <value>
+                <ToxicSensitivity>-0.50</ToxicSensitivity>
+              </value>
+            </li>
+          </operations>
+	      </li>
+
+        <!-- Engineer Power Armor -->
+
+        <li Class="PatchOperationSequence">
+          <success>Always</success>
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="SF_EngineerPowerArmorHelmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
+              <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="SF_EngineerPowerArmorHelmet"]/equippedStatOffsets</xpath>
+              <value>
+                <ToxicSensitivity>-0.50</ToxicSensitivity>
+              </value>
+            </li>
+          </operations>
+	      </li>
+
+        <li Class="PatchOperationSequence">
+          <success>Always</success>
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="SF_EngineerPowerArmor"]/equippedStatOffsets/ToxicSensitivity</xpath>
+              <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="SF_EngineerPowerArmor"]/equippedStatOffsets</xpath>
+              <value>
+                <ToxicSensitivity>-0.50</ToxicSensitivity>
+              </value>
+            </li>
+          </operations>
+	      </li>
+
+        <!-- Explorer Power Armor -->
+
+        <li Class="PatchOperationSequence">
+          <success>Always</success>
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="SF_ExplorerPowerArmorHelmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
+              <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="SF_ExplorerPowerArmorHelmet"]/equippedStatOffsets</xpath>
+              <value>
+                <ToxicSensitivity>-0.50</ToxicSensitivity>
+              </value>
+            </li>
+          </operations>
+	      </li>
+
+        <li Class="PatchOperationSequence">
+          <success>Always</success>
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="SF_ExplorerPowerArmor"]/equippedStatOffsets/ToxicSensitivity</xpath>
+              <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="SF_ExplorerPowerArmor"]/equippedStatOffsets</xpath>
+              <value>
+                <ToxicSensitivity>-0.50</ToxicSensitivity>
+              </value>
+            </li>
+          </operations>
+	      </li>
+
+        <!-- Grenadier Power Armor -->
+
+        <li Class="PatchOperationSequence">
+          <success>Always</success>
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="SF_GrenadierPowerArmorHelmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
+              <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="SF_GrenadierPowerArmorHelmet"]/equippedStatOffsets</xpath>
+              <value>
+                <ToxicSensitivity>-0.50</ToxicSensitivity>
+              </value>
+            </li>
+          </operations>
+	      </li>
+
+        <li Class="PatchOperationSequence">
+          <success>Always</success>
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="SF_GrenadierPowerArmor"]/equippedStatOffsets/ToxicSensitivity</xpath>
+              <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="SF_GrenadierPowerArmor"]/equippedStatOffsets</xpath>
+              <value>
+                <ToxicSensitivity>-0.50</ToxicSensitivity>
+              </value>
+            </li>
+          </operations>
+	      </li>
+
+        <!-- Commando Armor -->
+
+        <li Class="PatchOperationSequence">
+          <success>Always</success>
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="SF_CommandoArmorHelmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
+              <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="SF_CommandoArmorHelmet"]/equippedStatOffsets</xpath>
+              <value>
+                <ToxicSensitivity>-0.50</ToxicSensitivity>
+              </value>
+            </li>
+          </operations>
+	      </li>
+
+        <li Class="PatchOperationSequence">
+          <success>Always</success>
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="SF_CommandoArmor"]/equippedStatOffsets/ToxicSensitivity</xpath>
+              <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="SF_CommandoArmor"]/equippedStatOffsets</xpath>
+              <value>
+                <ToxicSensitivity>-0.50</ToxicSensitivity>
+              </value>
+            </li>
+          </operations>
+	      </li>
+
+        <!-- Diplomat Armor -->
+
+        <li Class="PatchOperationSequence">
+          <success>Always</success>
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="SF_DiplomatPowerArmorHelmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
+              <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="SF_DiplomatPowerArmorHelmet"]/equippedStatOffsets</xpath>
+              <value>
+                <ToxicSensitivity>-0.50</ToxicSensitivity>
+              </value>
+            </li>
+          </operations>
+	      </li>
+
+        <li Class="PatchOperationSequence">
+          <success>Always</success>
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="SF_DiplomatPowerArmor"]/equippedStatOffsets/ToxicSensitivity</xpath>
+              <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="SF_DiplomatPowerArmor"]/equippedStatOffsets</xpath>
+              <value>
+                <ToxicSensitivity>-0.50</ToxicSensitivity>
+              </value>
+            </li>
+          </operations>
+	      </li>
+
+        <!-- Defender Power Armor -->
+
+        <li Class="PatchOperationSequence">
+          <success>Always</success>
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="SF_DefenderPowerArmorHelmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
+              <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="SF_DefenderPowerArmorHelmet"]/equippedStatOffsets</xpath>
+              <value>
+                <ToxicSensitivity>-0.50</ToxicSensitivity>
+              </value>
+            </li>
+          </operations>
+	      </li>
+
+        <li Class="PatchOperationSequence">
+          <success>Always</success>
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="SF_DefenderPowerArmor"]/equippedStatOffsets/ToxicSensitivity</xpath>
+              <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="SF_DefenderPowerArmor"]/equippedStatOffsets</xpath>
+              <value>
+                <ToxicSensitivity>-0.50</ToxicSensitivity>
+              </value>
+            </li>
+          </operations>
+	      </li>
+
+        <!-- Scout Power Armor -->
+        
+        <li Class="PatchOperationSequence">
+          <success>Always</success>
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="SF_ScoutPowerArmorHelmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
+              <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="SF_ScoutPowerArmorHelmet"]/equippedStatOffsets</xpath>
+              <value>
+                <ToxicSensitivity>-0.50</ToxicSensitivity>
+              </value>
+            </li>
+          </operations>
+	      </li>
+
+        <li Class="PatchOperationSequence">
+          <success>Always</success>
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="SF_ScoutPowerArmor"]/equippedStatOffsets/ToxicSensitivity</xpath>
+              <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="SF_ScoutPowerArmor"]/equippedStatOffsets</xpath>
+              <value>
+                <ToxicSensitivity>-0.50</ToxicSensitivity>
+              </value>
+            </li>
+          </operations>
+	      </li>
+
+        <!-- Samurai Power Armor -->
+        
+        <li Class="PatchOperationSequence">
+          <success>Always</success>
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="SF_SamuraiPowerArmorHelmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
+              <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="SF_SamuraiPowerArmorHelmet"]/equippedStatOffsets</xpath>
+              <value>
+                <ToxicSensitivity>-0.50</ToxicSensitivity>
+              </value>
+            </li>
+          </operations>
+	      </li>
+
+        <li Class="PatchOperationSequence">
+          <success>Always</success>
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="SF_SamuraiPowerArmor"]/equippedStatOffsets/ToxicSensitivity</xpath>
+              <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="SF_SamuraiPowerArmor"]/equippedStatOffsets</xpath>
+              <value>
+                <ToxicSensitivity>-0.50</ToxicSensitivity>
+              </value>
+            </li>
+          </operations>
+	      </li>
+
+        <!-- Shock Trooper Armor -->
+
+        <li Class="PatchOperationSequence">
+          <success>Always</success>
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="SF_ShockTrooperArmorHelmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
+              <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="SF_ShockTrooperArmorHelmet"]/equippedStatOffsets</xpath>
+              <value>
+                <ToxicSensitivity>-0.50</ToxicSensitivity>
+              </value>
+            </li>
+          </operations>
+	      </li>
+
+        <li Class="PatchOperationSequence">
+          <success>Always</success>
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="SF_ShockTrooperArmor"]/equippedStatOffsets/ToxicSensitivity</xpath>
+              <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="SF_ShockTrooperArmor"]/equippedStatOffsets</xpath>
+              <value>
+                <ToxicSensitivity>-0.50</ToxicSensitivity>
+              </value>
+            </li>
+          </operations>
+	      </li>
+
+        <!-- Recon Armor -->
+
+        <li Class="PatchOperationSequence">
+          <success>Always</success>
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="SF_ReconPowerArmorHelmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
+              <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="SF_ReconPowerArmorHelmet"]/equippedStatOffsets</xpath>
+              <value>
+                <ToxicSensitivity>-0.50</ToxicSensitivity>
+              </value>
+            </li>
+          </operations>
+	      </li>
+
+        <li Class="PatchOperationSequence">
+          <success>Always</success>
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="SF_ReconPowerArmor"]/equippedStatOffsets/ToxicSensitivity</xpath>
+              <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="SF_ReconPowerArmor"]/equippedStatOffsets</xpath>
+              <value>
+                <ToxicSensitivity>-0.50</ToxicSensitivity>
+              </value>
+            </li>
+          </operations>
+	      </li>
+
+        <!-- Hazard Operations Armor -->
+
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>Defs/ThingDef[defName="SF_HazardOperationsArmorHelmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
+          <value>
+            <ToxicSensitivity>-0.50</ToxicSensitivity>
+          </value>
+        </li>
+        
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>Defs/ThingDef[defName="SF_HazardOperationsArmor"]/equippedStatOffsets/ToxicSensitivity</xpath>
+          <value>
+            <ToxicSensitivity>-0.50</ToxicSensitivity>
+          </value>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+</Patch>

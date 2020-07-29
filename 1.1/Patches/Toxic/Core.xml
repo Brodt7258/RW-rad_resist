@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- ========== Power Armor ========== -->
+
+  <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>Defs/ThingDef[defName="Apparel_PowerArmor"]/equippedStatOffsets/ToxicSensitivity</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Apparel_PowerArmor"]/equippedStatOffsets</xpath>
+				<value>
+					<ToxicSensitivity>-0.50</ToxicSensitivity>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+  <!-- ========== Power Armor Helmet ========== -->
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>Defs/ThingDef[defName="Apparel_PowerArmorHelmet"]/equippedStatOffsets</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Apparel_PowerArmorHelmet"]</xpath>
+				<value>
+					<equippedStatOffsets />
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+  <Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>Defs/ThingDef[defName="Apparel_PowerArmorHelmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Apparel_PowerArmorHelmet"]/equippedStatOffsets</xpath>
+				<value>
+					<ToxicSensitivity>-0.50</ToxicSensitivity>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

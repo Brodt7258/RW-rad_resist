@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+			<li>Vanilla Armour Expanded</li>
+		</mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+			<operations>
+
+        <!-- Light Marine Armor -->
+
+        <li Class="PatchOperationSequence">
+          <success>Always</success>
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="VAE_Headgear_LightMarineHelmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
+              <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="VAE_Headgear_LightMarineHelmet"]/equippedStatOffsets</xpath>
+              <value>
+                <ToxicSensitivity>-0.15</ToxicSensitivity>
+              </value>
+            </li>
+          </operations>
+	      </li>
+
+        <li Class="PatchOperationSequence">
+          <success>Always</success>
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="VAE_Apparel_LightMarineArmor"]/equippedStatOffsets/ToxicSensitivity</xpath>
+              <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="VAE_Apparel_LightMarineArmor"]/equippedStatOffsets</xpath>
+              <value>
+                <ToxicSensitivity>-0.25</ToxicSensitivity>
+              </value>
+            </li>
+          </operations>
+	      </li>
+
+        <!-- Heavy Marine Armor -->
+
+        <li Class="PatchOperationSequence">
+          <success>Always</success>
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="VAE_Headgear_HeavyMarineHelmet"]/equippedStatOffsets/ToxicSensitivity</xpath>
+              <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="VAE_Headgear_HeavyMarineHelmet"]/equippedStatOffsets</xpath>
+              <value>
+                <ToxicSensitivity>-0.50</ToxicSensitivity>
+              </value>
+            </li>
+          </operations>
+	      </li>
+
+        <li Class="PatchOperationSequence">
+          <success>Always</success>
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="VAE_Apparel_HeavyMarineArmor"]/equippedStatOffsets/ToxicSensitivity</xpath>
+              <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="VAE_Apparel_HeavyMarineArmor"]/equippedStatOffsets</xpath>
+              <value>
+                <ToxicSensitivity>-0.50</ToxicSensitivity>
+              </value>
+            </li>
+          </operations>
+	      </li>
+        
+      </operations>
+    </match>
+  </Operation>
+</Patch>

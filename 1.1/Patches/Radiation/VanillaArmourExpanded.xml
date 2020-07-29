@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+			<li>Vanilla Armour Expanded</li>
+		</mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+			<operations>
+
+        <!-- Hazmat Equipment -->
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VAE_Headgear_HAZMATMask"]/equippedStatOffsets</xpath>
+          <value>
+            <Radiation>-0.35</Radiation>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VAE_Apparel_HAZMATSuit"]/equippedStatOffsets</xpath>
+          <value>
+            <Radiation>-0.35</Radiation>
+          </value>
+        </li>
+
+        <!-- Light Marine Armor -->
+
+        <li Class="PatchOperationSequence">
+          <success>Always</success>
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="VAE_Headgear_LightMarineHelmet"]/equippedStatOffsets</xpath>
+              <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="VAE_Headgear_LightMarineHelmet"]</xpath>
+              <value>
+                <equippedStatOffsets />
+              </value>
+            </li>
+          </operations>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VAE_Headgear_LightMarineHelmet"]/equippedStatOffsets</xpath>
+          <value>
+            <Radiation>-0.10</Radiation>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VAE_Apparel_LightMarineArmor"]/equippedStatOffsets</xpath>
+          <value>
+            <Radiation>-0.15</Radiation>
+          </value>
+        </li>
+
+        <!-- Heavy Marine Armor -->
+
+        <li Class="PatchOperationSequence">
+          <success>Always</success>
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>Defs/ThingDef[defName="VAE_Headgear_HeavyMarineHelmet"]/equippedStatOffsets</xpath>
+              <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>Defs/ThingDef[defName="VAE_Headgear_HeavyMarineHelmet"]</xpath>
+              <value>
+                <equippedStatOffsets />
+              </value>
+            </li>
+          </operations>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VAE_Headgear_HeavyMarineHelmet"]/equippedStatOffsets</xpath>
+          <value>
+            <Radiation>-0.35</Radiation>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="VAE_Apparel_HeavyMarineArmor"]/equippedStatOffsets</xpath>
+          <value>
+            <Radiation>-0.35</Radiation>
+          </value>
+        </li>
+        
+      </operations>
+    </match>
+  </Operation>
+</Patch>

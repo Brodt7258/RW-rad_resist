@@ -5,7 +5,7 @@
   <version>1.0.0</version>
   
   <dependencies>
-	  <li>1127530465</li> <!-- Rimatomics -->
+    <li>1127530465</li> <!-- Rimatomics -->
   </dependencies>
 
   <incompatibleWith></incompatibleWith>
@@ -22,7 +22,5 @@
   </suggests>
 
   <showCrossPromotions>true</showCrossPromotions>
-  <manifestUri>https://raw.githubusercontent.com/Onigamii/ApexRimworldLegends-CE/master/About/Manifest.xml</manifestUri>
-  <downloadUri>https://github.com/Onigamii/ApexRimworldLegends-CE/releases/latest</downloadUri>
 
 </Manifest>
